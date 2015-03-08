@@ -1,0 +1,255 @@
+/*
+Theme Name: The Junto
+Description: A custom, responsive theme for Easton Area High School's newspaper, The Junto.
+Version: 1.0
+Author: Thomas Thachil, Patrick Alfieri, Rithvik Kundarapu
+*/
+
+/* Import Bootstrap CSS. Note: All CSS code after this import link will add or override Bootstrap CSS. */
+@import url('css/bootstrap.min.css');
+
+/* Header */
+
+#body {
+    
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+#quote {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    
+}
+
+#headerimage {
+    width: 495px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#date {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Navigation */
+
+.navbar {
+    line-height: 20px; /*use something under the font-size, collapse does some weird stuff*/
+    border: 0px;
+    border-radius: 0px; /*no curved borders*/
+    background-color: #a02e33;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 300 ;
+    text-transform:uppercase;
+}
+
+.navbar-nav {
+      float: none;
+      display: inline-block;
+    }
+
+.navbar-nav > li {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    background-color: transparent
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: black;
+    //background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: black;
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    background-color: #a02e33;
+}
+
+.dropdown-menu > li > a {
+    color: #ffffff !important;
+    font-weight: 300;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: black !important;
+    background-color: transparent;
+}
+
+.navbar-collapse {
+    background-color: #a02e33;
+}
+
+.navbar-toggle{
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.icon-bar {
+    background-color: #ffffff !important;
+}
+
+/* Article */
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+img { 
+    max-width: 100%; /* same as what image responsive does in bootstrap */
+    height: auto;
+}
+
+/* Sidebar */
+
+.sidebar {
+    float: right;
+    width: 250px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#ad {
+    margin-top: 20px;
+}
+
+/* WordPress Core (Necessary for alignment, and edited to use responsiveness correctly) */
+.alignnone {
+   margin: 5px 20px 20px 0; 
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    //background: #fff;
+    //border: 1px solid #f0f0f0;
+    max-width: 100%; /* Image does not overflow the content area */
+    //padding: 5px 3px 10px;
+    //text-align: center;
+}
+
+.wp-caption.alignnone {
+   margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: auto;
+}
+
+//.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
