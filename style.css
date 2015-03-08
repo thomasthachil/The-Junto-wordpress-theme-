@@ -10,28 +10,20 @@ Author: Thomas Thachil, Patrick Alfieri, Rithvik Kundarapu
 
 /* Header */
 
-#body {
-    
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-}
-
 #quote {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     font-weight: 300;
     
 }
 
 #headerimage {
-    width: 495px;
+    width: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
-}
+    }
 
 #date {
     text-align: center;
@@ -43,16 +35,17 @@ Author: Thomas Thachil, Patrick Alfieri, Rithvik Kundarapu
 /* Navigation */
 
 .navbar {
-    line-height: 20px; /*use something under the font-size, collapse does some weird stuff*/
+    line-height: 10px; /*use something under the font-size, collapse does some weird stuff*/
     border: 0px;
     border-radius: 0px; /*no curved borders*/
     background-color: #a02e33;
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    font-weight: 300 ;
-    text-transform:uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
 }
+
 
 .navbar-nav {
       float: none;
@@ -82,6 +75,13 @@ Author: Thomas Thachil, Patrick Alfieri, Rithvik Kundarapu
     background-color: transparent;
 }
 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: black;
+  background-color: transparent;
+}
+
 .dropdown-menu {
     background-color: #a02e33;
 }
@@ -93,8 +93,17 @@ Author: Thomas Thachil, Patrick Alfieri, Rithvik Kundarapu
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-    color: black !important;
+    color: black;
     background-color: transparent;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: black !important; /*needs important to work*/
+  text-decoration: none;
+  background-color: transparent !important; /*needs important to work in toggled menu*/
+  outline: 0;
 }
 
 .navbar-collapse {
@@ -116,16 +125,44 @@ Author: Thomas Thachil, Patrick Alfieri, Rithvik Kundarapu
 
 /* Article */
 
-h2 {
-    font-family: 'Lato', sans-serif;
+.title {
+    font-family: 'Oswald', sans-serif;
     font-size: 42px;
     font-weight: 300;
 }
 
+.title > a
+{
+    color: black;
+}
+
+.title > a:hover
+{
+    color: #a02e33;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin-top: 20px;
+    
+}
+
 p {
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
+}
+
+.content-wrapper h1 {
+
+}
+
+.content-wrapper h4 {
+
+}
+
+.content-wrapper h3 {
+
 }
 
 img { 
@@ -133,6 +170,35 @@ img {
     height: auto;
 }
 
+
+/*Category Page*/
+
+.category-post {
+    margin-bottom: 30px;
+
+}
+
+.category-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.category-title > a
+{
+    color: black;
+}
+
+.category-title > a:hover
+{
+    color: #a02e33;
+    text-decoration: none;
+}
+
+.line-separator {
+    height: 20px;
+    border-bottom:1px solid #000000;
+}
 /* Sidebar */
 
 .sidebar {

@@ -27,6 +27,9 @@ add_filter( 'wp_page_menu_args', 'home_page_menu_args' );
 
 
 /* adds the option to upload a header image in wordpress customizer */
+$args = array(
+	'default-image' => get_template_directory_uri() . '/images/header.jpg',
+);
 add_theme_support( 'custom-header', $args );
 //check up on how to add default sizing for header image
 add_theme_support( 'post-thumbnails' ); 
@@ -44,7 +47,7 @@ add_filter('the_content', 'add_image_responsive_class');*/
 
 /*fonts*/
 function fonts() {
-    wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400|Dosis:300,600|Lato:300' );
+    wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400|Dosis:300,600|Lato:300|Oswald:300' );
 }
 add_action('wp_print_styles', 'fonts');
 
