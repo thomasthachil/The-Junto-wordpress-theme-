@@ -12,7 +12,9 @@
                     
                         <div class = "row category-post">
                             <div class = "col-md-4">
-                                <?php the_post_thumbnail( 'medium' ); ?>
+                                <div class="category-thumbnail">
+                                <?php the_post_thumbnail( 'large' ); ?>
+                                </div>
                             </div>
                             <div class = "col-md-8">
                                 <div class = "category-title">
@@ -20,14 +22,13 @@
                                         <?php the_title(); ?>
                                     </a>
                                 </div>
-                                <div class = "subheading">
-                                </div>
-                                <div class = "author-date">
+                                <div class = "excerpt">
+                                    <?php the_excerpt(); ?> 
                                 </div>
                             </div>
-                            <div class="col-md-12 line-separator"></div>
+                            
                         </div>
-
+                    <div class="row line-separator"></div>
                     <?php 
                     else: ?>
                         <div class = "row category-post">

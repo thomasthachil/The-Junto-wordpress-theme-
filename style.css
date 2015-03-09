@@ -174,14 +174,18 @@ img {
 /*Category Page*/
 
 .category-post {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
 
+.category-thumbnail {
+    text-align: center;
 }
 
 .category-title {
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
     font-weight: 300;
+    margin-bottom: 10px;
 }
 
 .category-title > a
@@ -196,8 +200,11 @@ img {
 }
 
 .line-separator {
-    height: 20px;
+    //height: 20px;
     border-bottom:1px solid #000000;
+    margin-bottom: 20px;
+    margin-left: 2px; /* makes sure lines don't touch edges on mobile devices */
+    margin-right: 2px;
 }
 /* Sidebar */
 

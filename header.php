@@ -13,14 +13,14 @@
             <p id="quote">"I had formed most of my ingenious acquaintances into a club of mental improvement, which we called the Junto" - Benjamin Franklin</p>
         
             <a href="<?php bloginfo( 'url' ); ?> ">
-                <img class = "img-responsive" id="headerimage" src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+                <img id="headerimage" src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
             </a>
             <p id="date">
                 Easton Area High School  |  <?php echo current_time( 'l, F j, Y' ); ?>
             </p>
         </header>
             
-        <nav class="navbar navbar-default navigation navbar-center" role="navigation">
+        <nav class="navbar navbar-default" role="navigation">
               <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
